@@ -26,8 +26,8 @@ import (
 	"log"
 	"net"
 
+	pb "github.com/physcat/bazel-grpc-go-example/helloworld"
 	"google.golang.org/grpc"
-	pb "google.golang.org/grpc/examples/helloworld/helloworld"
 )
 
 const (

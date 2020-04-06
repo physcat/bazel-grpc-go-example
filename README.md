@@ -8,14 +8,17 @@ Start with the example files form: [grpc-go](https://github.com/grpc/grpc-go)
 - examples/helloworld/greeter_server/main.go
 - examples/helloworld/helloworld/helloworld.proto
 
-Make sure to update the include path to reflect your project. e.g.
+
+Setup your go modules and update imports to reflect changes:
 
 ```bash
-$ go mod init github.com/physcat/bazel-grpc-go
+$ go mod init github.com/physcat/bazel-grpc-go-example
 ```
-`git diff`
-```diff
 
+Update imports:
+```diff
++       pb "github.com/physcat/bazel-grpc-go-example/helloworld"
+-       pb "google.golang.org/grpc/examples/helloworld/helloworld"
 ```
 
 
